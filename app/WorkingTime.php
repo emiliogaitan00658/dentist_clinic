@@ -14,25 +14,25 @@ class WorkingTime extends Model
   {
     switch ($this->day) {
       case 6:
-        return "Saturday";
+        return "Sabado";
         break;
       case 7:
-        return "Sunday";
+        return "Domingo";
         break;
       case 1:
-        return "Monday";
+        return "Lunes";
         break;
       case 2:
-        return "Tuesday";
+        return "Martes";
         break;
       case 3:
-        return "Wendesday";
+        return "Miercoles";
         break;
       case 4:
-        return "Thursday";
+        return "Jueves";
         break;
       case 5:
-        return "Friday";
+        return "Viernes";
         break;
 
       default:

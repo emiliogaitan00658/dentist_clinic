@@ -4,7 +4,7 @@
   <div class="container my-3">
   @if (session("success")!=null)
   <div class="alert alert-success alert-dismissible fade show">
-    <h4 class="alert-heading">Completed Successfully</h4>
+    <h4 class="alert-heading">Exito Registro</h4>
     {{session("success")}}
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
@@ -16,7 +16,7 @@
       <div class="card">
         <a href="{{route('addPatient')}}" class="home-img"><img src="{{asset('patient.png')}}" alt="" class="card-img-top"></a>
         <div class="card-body">
-          <h5 class="card-title">Create new patient</h5>
+          <h5 class="card-title">Crear nuevo paciente</h5>
           <p class="card-text">Here you can create a new patient and all the details you need to know about the patient.</p>
           <a href="{{route('addPatient')}}" class="btn btn-home">Create Now</a>
         </div>
@@ -26,7 +26,7 @@
       <div class="card">
         <a href="{{route('allAppointment',['date'=>date('Y-m-d')])}}" class="home-img"><img src="{{asset('calendar.png')}}" alt="" class="card-img-top"></a>
         <div class="card-body">
-          <h5 class="card-title">Todays Visits</h5>
+          <h5 class="card-title">Todas las Visitas</h5>
           <p class="card-text">Here you can check all of your todays appointments and edit,approve or cancel them.</p>
           <a href="{{route('allAppointment',['date'=>date('Y-m-d')])}}" class="btn btn-home">Check Now</a>
         </div>
@@ -36,7 +36,7 @@
       <div class="card">
         <a href="{{route('allPatient')}}" class="home-img"><img src="{{asset('list.png')}}" alt="" class="card-img-top"></a>
         <div class="card-body">
-          <h5 class="card-title">Show All Patients</h5>
+          <h5 class="card-title">Mostrar Pacientes</h5>
           <p class="card-text">Here you can get a list of all patients , you can select the one you want and add diagnosis</p>
           <a href="{{route('allPatient')}}" class="btn btn-home">Show Now</a>
         </div>
@@ -45,7 +45,7 @@
   </div>
   </div>
   @if($visits->count()>0)
-    <h4 class="center mb-3" id="stateVisit" data-state="{{$stateVisit->value}}" data-date="{{date('Y-m-d')}}">Today's Visits</h4>
+    <h4 class="center mb-3" id="stateVisit" data-state="{{$stateVisit->value}}" data-date="{{date('Y-m-d')}}">Todas Visistas</h4>
   <div class="row mt-3">
     <div class="col-4">
       <div class="card">
